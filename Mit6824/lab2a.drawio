@@ -1,1 +1,89 @@
-<mxfile host="app.diagrams.net" modified="2022-05-08T00:53:48.518Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" version="17.4.2" etag="YLUtde68c5VkHdFKF5xC" type="github"><diagram id="Sz4o8PIdrFKey9SxVtSI">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-08T01:19:35.081Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="CQWNA52gAqLPCSjt_hkf" version="17.4.2" type="github">
+  <diagram id="Sz4o8PIdrFKey9SxVtSI" name="第 1 页">
+    <mxGraphModel dx="935" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-1" value="candidate(leader)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="100" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-4" value="一段时间&lt;br&gt;没有收到&lt;br&gt;valid RPC" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="LylfJ6FLKvlj6IzFCopS-1">
+          <mxGeometry x="20" y="70" width="60" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="LylfJ6FLKvlj6IzFCopS-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="80" as="sourcePoint" />
+            <mxPoint x="80" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="80" />
+              <mxPoint x="120" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-9" value="自增 Term&lt;br&gt;成为Candidate" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LylfJ6FLKvlj6IzFCopS-8">
+          <mxGeometry x="-0.2023" y="-2" relative="1" as="geometry">
+            <mxPoint x="12" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-11" value="发送&lt;br&gt;Request &lt;br&gt;Vote&lt;br&gt;RPC&lt;br&gt;&lt;br&gt;多数成功&lt;br&gt;成为leader" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="LylfJ6FLKvlj6IzFCopS-1">
+          <mxGeometry x="20" y="220" width="60" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-21" value="下个Term&lt;br&gt;选举" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="LylfJ6FLKvlj6IzFCopS-1">
+          <mxGeometry x="20" y="410" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-22" value="失败&lt;br&gt;再次超时" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;exitX=1.05;exitY=0.905;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="LylfJ6FLKvlj6IzFCopS-1" source="LylfJ6FLKvlj6IzFCopS-11">
+          <mxGeometry x="0.0681" y="-20" relative="1" as="geometry">
+            <mxPoint x="50" y="390" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="170" y="347" />
+              <mxPoint x="170" y="425" />
+            </Array>
+            <mxPoint x="80" y="425" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-2" value="follower&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22leader%22%20style%3D%22shape%3DumlLifeline%3Bperimeter%3DlifelinePerimeter%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Bcontainer%3D1%3Bcollapsible%3D0%3BrecursiveResize%3D0%3BoutlineConnect%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%2270%22%20width%3D%22100%22%20height%3D%22590%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="70" width="100" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-7" value="收到&lt;br&gt;Request&lt;br&gt;Vote&lt;br&gt;RPC" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="LylfJ6FLKvlj6IzFCopS-2">
+          <mxGeometry x="20" y="220" width="60" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="309" as="sourcePoint" />
+            <mxPoint x="360" y="309" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="320" as="sourcePoint" />
+            <mxPoint x="420" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="460" y="320" />
+              <mxPoint x="460" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-14" value="检查 Term&lt;br&gt;Index" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LylfJ6FLKvlj6IzFCopS-13">
+          <mxGeometry x="-0.2023" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.006;exitY=0.692;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359.6400000000001" y="401.96000000000004" as="sourcePoint" />
+            <mxPoint x="160" y="401.96000000000004" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250" y="402" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LylfJ6FLKvlj6IzFCopS-16" value="成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LylfJ6FLKvlj6IzFCopS-15">
+          <mxGeometry x="0.2754" y="-1" relative="1" as="geometry">
+            <mxPoint x="27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
