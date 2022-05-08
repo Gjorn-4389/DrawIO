@@ -1,1 +1,111 @@
-<mxfile host="app.diagrams.net" modified="2022-05-08T01:20:14.355Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" version="17.4.2" etag="7SgrlhdnbAoFiRNrDpzV" type="github"><diagram id="49zC79qz1129LLdxNAwZ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-08T01:31:06.793Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="m-EmPYI3mRFYcXMjNuNX" version="17.4.2" type="github">
+  <diagram id="49zC79qz1129LLdxNAwZ" name="第 1 页">
+    <mxGraphModel dx="935" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-1" value="Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="60" width="100" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=1;" vertex="1" parent="e3MEY39gv6BUDx4sgsHI-1">
+          <mxGeometry x="40" y="80" width="20" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-2" value="Leader" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="314" y="60" width="100" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=1;" vertex="1" parent="e3MEY39gv6BUDx4sgsHI-2">
+          <mxGeometry x="40" y="90" width="20" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=1;" vertex="1" parent="e3MEY39gv6BUDx4sgsHI-2">
+          <mxGeometry x="40" y="330" width="20" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-17" value="多数成功&lt;br&gt;更新Commit Index&lt;br&gt;Apply Message" style="html=1;verticalAlign=bottom;endArrow=block;rounded=1;" edge="1" parent="e3MEY39gv6BUDx4sgsHI-2">
+          <mxGeometry x="0.1908" width="80" relative="1" as="geometry">
+            <mxPoint x="60" y="398" as="sourcePoint" />
+            <mxPoint x="60" y="468" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="156" y="398" />
+              <mxPoint x="156" y="468" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-18" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=1;" vertex="1" parent="e3MEY39gv6BUDx4sgsHI-2">
+          <mxGeometry x="40" y="570" width="20" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-3" value="Follower" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="60" width="100" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-11" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=1;" vertex="1" parent="e3MEY39gv6BUDx4sgsHI-3">
+          <mxGeometry x="40" y="220" width="20" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-13" value="检查冲突&lt;br&gt;覆盖日志" style="html=1;verticalAlign=bottom;endArrow=block;rounded=1;" edge="1" parent="e3MEY39gv6BUDx4sgsHI-3">
+          <mxGeometry x="0.1145" width="80" relative="1" as="geometry">
+            <mxPoint x="60" y="270" as="sourcePoint" />
+            <mxPoint x="60" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="156" y="270" />
+              <mxPoint x="156" y="340" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-14" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=1;" edge="1" parent="e3MEY39gv6BUDx4sgsHI-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="367" as="sourcePoint" />
+            <mxPoint x="-195" y="367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=1;" vertex="1" parent="e3MEY39gv6BUDx4sgsHI-3">
+          <mxGeometry x="40" y="600" width="20" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-5" value="Start()" style="html=1;verticalAlign=bottom;endArrow=block;rounded=1;entryX=0.017;entryY=0.103;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="110" y="160" as="sourcePoint" />
+            <mxPoint x="354.3399999999999" y="159.65999999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-10" value="添加到&lt;br&gt;Logs" style="html=1;verticalAlign=bottom;endArrow=block;rounded=1;" edge="1" parent="1">
+          <mxGeometry x="0.1145" width="80" relative="1" as="geometry">
+            <mxPoint x="374" y="180" as="sourcePoint" />
+            <mxPoint x="374" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="180" />
+              <mxPoint x="470" y="250" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-12" value="AppendEntries RPC" style="html=1;verticalAlign=bottom;endArrow=block;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="375" y="301.34000000000003" as="sourcePoint" />
+            <mxPoint x="610" y="301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-16" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="545" as="sourcePoint" />
+            <mxPoint x="110" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-20" value="Next AppendEntries RPC" style="html=1;verticalAlign=bottom;endArrow=block;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="376" y="680.3400000000001" as="sourcePoint" />
+            <mxPoint x="611" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3MEY39gv6BUDx4sgsHI-21" value="更新CommitIndex&lt;br&gt;Apply Message" style="html=1;verticalAlign=bottom;endArrow=block;rounded=1;" edge="1" parent="1">
+          <mxGeometry x="0.1145" width="80" relative="1" as="geometry">
+            <mxPoint x="630" y="690" as="sourcePoint" />
+            <mxPoint x="630" y="760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="726" y="690" />
+              <mxPoint x="726" y="760" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
